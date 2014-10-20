@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}ICT Careers{% endblock %}</title>     
+         {% block stylesheets %}     
+
+		<link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('css/local.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('http://www.shieldui.com/shared/components/latest/css/shieldui-all.min.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css') }}" rel="stylesheet" type="text/css" />
+    	 {% endblock %}
+        	<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+      <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ICT Careers</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li><a href="#">Students</a></li>
+                    <li><a href="{{ path('teacher_skill_main') }}">Skills & Improvement</a></li>
+                    <li><a href="{{ path('activity_main') }}">Activities</a></li>
+                    <li><a href="{{ path('career_main') }}">Careers</a></li>
+                    <li><a href="{{ path('scholarship_main') }}">Scholarships</a></li>
+                    <li><a href="#">Advisors</a></li>					
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+				    <li class="active"><a href="{{ path('welcome') }}">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        {% block body %}{% endblock %}
+
+    </div>
+
+        {% block javascripts %}
+          <script src="js/jquery-1.10.2.min.js"></script>
+          <script src="bootstrap/js/bootstrap.min.js"></script>
+          <script src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+          <script src="http://www.prepbootstrap.com/Content/js/gridData.js"></script>
+
+        {% endblock %}
+    </body>
+</html>
