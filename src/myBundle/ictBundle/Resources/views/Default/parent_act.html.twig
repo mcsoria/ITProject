@@ -15,7 +15,7 @@
                       <BR><b>Gender:</b>&nbsp; {{ entity.gender }}
                       <BR><b>Location:</b>&nbsp; {{ entity.location }}
                       <BR><b>Event Dates:</b>&nbsp; {{ entity.eventdates }}  
-                      <BR><b><a href="{{ path('activity_count', { 'id': entity.id }) }}">Click for like this topic: </a></b>There are {{ entity.popular }} people like this.                 
+                      <BR><b><a href="{{ path('activity_count', { 'id': entity.id }) }}">Click to like this topic: </a></b>There are {{ entity.popular }} people who like this.                 
                         </div>
                         <div class="panel-heading">
                             <a href="{{ entity.url }}"></i>More Detail:{{ entity.url }}</a>

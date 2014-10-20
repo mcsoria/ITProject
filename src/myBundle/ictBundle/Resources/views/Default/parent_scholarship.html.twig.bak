@@ -12,7 +12,7 @@
                       <BR><b>Closing date:</b>&nbsp; {{ entity.closing_date }}
                       <BR><b>State:</b>&nbsp; {{ entity.state }}
                       <BR><b>CONTACT:</b>&nbsp; {{ entity.contact }}
-                      <BR><b><a href="{{ path('scholarship_count', { 'id': entity.id }) }}">Click for like this topic: </a></b>There are {{ entity.popular }} people like this.
+                      <BR><b><a href="{{ path('scholarship_count', { 'id': entity.id }) }}">Click to like this topic: </a></b>There are {{ entity.popular }} people who like this.
                         </div>
                         <div class="panel-heading">
                             <a href="{{ entity.url }}"></i>More Detail:{{ entity.url }}</a>

@@ -11,7 +11,7 @@
                           <b>Jobs:</b>&nbsp; {{ entity.jobs }}
                       <BR><b>Skill&Interests:</b>&nbsp; {{ entity.skill_interests }}
                       <BR><b>profile:</b>&nbsp;<a href="{{ entity.profile }}">More opinion</a>
-                      <BR><b><a href="{{ path('career_count', { 'id': entity.id }) }}">Click for like this topic: </a></b>There are {{ entity.popular }} people like this.
+                      <BR><b><a href="{{ path('career_count', { 'id': entity.id }) }}">Click to like this topic: </a></b>There are {{ entity.popular }} people who like this.
                         </div>
                         <div class="panel-heading">
                             <a href="{{ entity.url }}"></i>More Detail:{{ entity.url }}</a>
