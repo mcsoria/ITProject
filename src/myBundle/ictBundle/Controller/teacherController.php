@@ -55,10 +55,10 @@ class teacherController extends Controller
 // 	    			'driver' => 'pdo_pgsql',
 // 	    	);
 			$connectionParams = array(
-					'dbname' => 'daokdplhc0lu8o',
-					'user' => 'apqhwhukcxzeue',
-					'password' => 'bOKqjqOlg56Z7a2egwpvF_Tar4',
-					'host' => 'ec2-54-225-102-235.compute-1.amazonaws.com',
+					'dbname' => 'd2cugdbsibkams',
+					'user' => 'rrtbmylvvfcjqn',
+					'password' => 'CuiEON4wbdTm5KION9QF0reZId',
+					'host' => 'ec2-54-243-51-102.compute-1.amazonaws.com',
 					'driver' => 'pdo_pgsql',
 			);
 			$conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
@@ -289,10 +289,10 @@ class teacherController extends Controller
     	// 	    			'driver' => 'pdo_pgsql',
     	// 	    	);
     	$connectionParams = array(
-    			'dbname' => 'daokdplhc0lu8o',
-    			'user' => 'apqhwhukcxzeue',
-    			'password' => 'bOKqjqOlg56Z7a2egwpvF_Tar4',
-    			'host' => 'ec2-54-225-102-235.compute-1.amazonaws.com',
+    			'dbname' => 'd2cugdbsibkams',
+    			'user' => 'rrtbmylvvfcjqn',
+    			'password' => 'CuiEON4wbdTm5KION9QF0reZId',
+    			'host' => 'ec2-54-243-51-102.compute-1.amazonaws.com',
     			'driver' => 'pdo_pgsql',
     	);
     	$conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
