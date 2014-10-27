@@ -6,6 +6,14 @@ hello:
     path:     /hello
     defaults: { _controller: "myBundleictBundle:Content:hello" }
     
+contact:
+    path:     /contact
+    defaults: { _controller: "myBundleictBundle:Contact:contact" }
+    
+about:
+    path:     /about
+    defaults: { _controller: "myBundleictBundle:About:about" }    
+    
 career_main:
     path:     /career_main
     defaults: { _controller: "myBundleictBundle:career:main" }
